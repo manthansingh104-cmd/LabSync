@@ -1,0 +1,45 @@
+### ==================== REGISTER ====================
+
+POST http://127.0.0.1:5000/api/users/register
+Content-Type: application/json
+
+{
+    "name": "Test Student",
+    "email": "test2@labsync.com",
+    "password": "test123"
+}
+
+
+### ==================== LOGIN ====================
+
+POST http://127.0.0.1:5000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "test2@labsync.com",
+    "password": "test123"
+}
+
+
+### ==================== CREATE PROGRAM ====================
+
+POST http://127.0.0.1:5000/api/programs
+Content-Type: application/json
+
+{
+    "title": "Linear Search",
+    "topic": "Searching",
+    "language": "C++",
+    "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int arr[] = {10, 20, 30, 40, 50};\n    int key = 30;\n\n    for (int i = 0; i < 5; i++) {\n        if (arr[i] == key) {\n            cout << \"Element found at index \" << i;\n            return 0;\n        }\n    }\n\n    cout << \"Element not found\";\n    return 0;\n}",
+    "user": "6aa1283662e110305fa87e1a"
+}
+
+
+### ==================== GET ALL PROGRAMS ====================
+
+GET http://127.0.0.1:5000/api/programs
+
+
+### ==================== GET PROGRAM BY ID ====================
+
+GET http://127.0.0.1:5000/api/programs/YOUR_PROGRAM_ID_HERE
