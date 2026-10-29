@@ -4,7 +4,7 @@ import axios from "axios";
 const API = axios.create({
     baseURL:
         import.meta.env.VITE_API_URL ||
-        "https://labsync-1-s1qy.onrender.com/api",
+        "https://labsync-backend-api.onrender.com/api",
 });
 
 API.interceptors.request.use(
