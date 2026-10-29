@@ -1,0 +1,31 @@
+# Dependencies
+
+node_modules/
+**/node_modules/
+
+# Build files
+
+dist/
+**/dist/
+
+# Environment secrets
+
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Git history and backups
+
+.git/
+.git-backup/
+**/.git-backup/
+
+# Logs
+
+*.log
+
+# Editor settings
+
+.vscode/
+.idea/
